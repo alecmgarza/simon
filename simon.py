@@ -17,11 +17,11 @@ def game():
         while first_pick <= last_pick:
             pick = random.choice('0123456789')
             print(pick)
-            time.sleep(1)
+            time.sleep(1.5)
             os.system('cls')
             sequence += pick
             first_pick += 1
-            time.sleep(1)
+            time.sleep(0.3)
 
         os.system('cls')
 
@@ -41,3 +41,5 @@ def game():
     
     simon_says(first_pick, last_pick)
 game()
+
+# display score with game over message
