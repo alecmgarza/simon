@@ -1,8 +1,11 @@
 import time
+import random
 
-def game():
-    print('Let\'s play a game')
-    time.sleep(3)
-    print('Game over')
+first_pick = 1
 
-game()
+last_pick = 3
+
+while first_pick <= last_pick:
+    print(random.choice('0123456789'))
+    first_pick += 1
+    time.sleep(1)
