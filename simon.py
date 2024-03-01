@@ -1,5 +1,6 @@
 import time
 import random
+import os
 
 first_pick = 1
 
@@ -13,6 +14,8 @@ while first_pick <= last_pick:
     sequence += pick
     first_pick += 1
     time.sleep(1)
+
+os.system('cls')
 
 player = input('Enter the sequence: ')
 
